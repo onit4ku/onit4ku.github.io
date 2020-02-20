@@ -163,6 +163,7 @@ body {
 #welcome-section {
   font-family: "Lato";
   font-variant: small-caps;
+  font-style: oblique;
   text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
   text-align: center;
   color: #fff;
@@ -170,21 +171,17 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 15% top;
+  display: flex;
+  text-shadow: beige;
+  align-items: center;
+  justify-content: center;
   height: 100vh;
-  position: relative;
-  z-index: 9999;
 }
 #welcome-section:after {
   -moz-transition: opacity 4s ease;
   -webkit-transition: opacity 4s ease;
   -ms-transition: opacity 4s ease;
   transition: opacity 4s ease;
-  content: "";
-  position: absolute;
-  width: 100%;
-  display: block;
-  top: 0;
-  left: 0;
   background-color: #0c0c0c;
   opacity: 0.25;
 }
@@ -545,6 +542,6 @@ body {
   }
 }
 
-.line{
-  background-color: white
+.line {
+  background-color: white;
 }
