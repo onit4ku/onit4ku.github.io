@@ -298,6 +298,35 @@ body {
   color: #f2a3a5;
 }
 
+.skills-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#skills .flex-item {
+  font-weight: bold;
+  font-size: 3.5em;
+  text-align: center;
+}
+
+.contact-container {
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+}
+
+.contact-container .flex-item {
+  margin-top: 25px;
+  font-weight: bold;
+  font-size: 1.5em;
+  padding-right: 10px;
+  text-align: center;
+}
+
 @-ms-viewport {
   width: device-width;
 }
@@ -305,6 +334,12 @@ body {
   body,
   html {
     min-width: 320px;
+  }
+  .logo {
+    display: none;
+  }
+  .navPanelToggle {
+    display: none;
   }
 }
 @media screen and (max-width: 1680px) {
@@ -326,10 +361,22 @@ body {
   body {
     font-size: 12pt;
   }
+  .logo {
+    display: none;
+  }
+  .navPanelToggle {
+    display: none;
+  }
 }
 @media screen and (max-width: 480px) {
   body {
     font-size: 12pt;
+  }
+  .logo {
+    display: none;
+  }
+  .navPanelToggle {
+    display: none;
   }
 }
 @media screen and (max-width: 736px) {
@@ -339,17 +386,35 @@ body {
   h2 {
     font-size: 1.25em;
   }
+  .logo {
+    display: none;
+  }
+  .navPanelToggle {
+    display: none;
+  }
 }
 @media screen and (max-width: 480px) {
   section .inner {
     max-width: 90%;
     width: 90%;
   }
+  .logo {
+    display: none;
+  }
+  .navPanelToggle {
+    display: none;
+  }
 }
 @media screen and (max-width: 480px) {
   #header .inner {
     max-width: 90%;
     width: 90%;
+  }
+  .logo {
+    display: none;
+  }
+  .navPanelToggle {
+    display: none;
   }
 }
 @media screen and (max-width: 736px) {
@@ -377,7 +442,23 @@ body {
     max-width: 90%;
     width: 90%;
   }
+  .logo {
+    display: none;
+  }
+  .navPanelToggle {
+    display: none;
+  }
 }
+
+@media screen and (max-width: 400px) {
+  .logo {
+    display: none;
+  }
+  .navPanelToggle {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 1680px) {
   #welcome-section {
     padding: 10em 0 8em 0;
@@ -464,31 +545,6 @@ body {
   }
 }
 
-.skills-container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-#skills .flex-item {
-  font-weight: bold;
-  font-size: 3.5em;
-  text-align: center;
-}
-
-.contact-container {
-  display: flex;
-  flex-flow: row wrap;
-  list-style: none;
-}
-
-.contact-container .flex-item {
-  margin-top: 25px;
-  font-weight: bold;
-  font-size: 1.5em;
-  padding-right: 10px;
-  text-align: center;
+.line{
+  background-color: white
 }
